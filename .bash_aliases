@@ -27,6 +27,3 @@ alias gpush='git push'
 alias gclone='git clone'
 
 # variables
-export cse1325='/home/natris/Nextcloud/Jonathan/vscode/java/cse1325'
-export gnat='/home/natris/Nextcloud/natris/GIT'
-export uta='/home/natris/Nextcloud/Jonathan/School/College/UTA/3rd'
