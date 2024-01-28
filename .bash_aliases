@@ -15,6 +15,11 @@ alias ..='cd ..'
 # storage
 alias storage='du -x -h -d1'
 
+# Git
+alias gs='git status'
+alias ga='git add'
+alias glazy='git add -A && git commit -m "updated" && git push'
+
 # File Handling 
 alias cp='cp -i'	#confirm
 alias rm='rm -i'	#confirm
