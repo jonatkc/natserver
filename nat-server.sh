@@ -5,7 +5,7 @@ sudo apt update
 #install utils
 sudo apt install nala -y
 
-sudo nala install tree docker-compose curl wget neofetch ufw iperf3 neovim htop cifs-utils tmux -y
+sudo nala install tree docker docker-compose curl wget neofetch ufw iperf3 htop cifs-utils tmux -y
 
 #upgrade
 sudo nala upgrade -y
