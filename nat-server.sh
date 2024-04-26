@@ -11,6 +11,6 @@ sudo nala install tree docker docker-compose curl wget neofetch ufw iperf3 htop 
 sudo nala upgrade -y
 
 #bashrc edit
-cp .bash_aliases ~
-cp .tmux.conf ~
-cp .vimrc ~
+cp .config/.bash_aliases ~
+cp .config/.tmux.conf ~
+cp .config/.vimrc ~
