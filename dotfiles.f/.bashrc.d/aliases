@@ -1,0 +1,85 @@
+# Commands
+alias dnf='sudo dnf'
+alias apt='dnf'
+alias upall='sudo dnf upgrade -y && flatpak upgrade -y'
+alias sudo='sudo '
+alias ssha='eval $(ssh-agent) && ssh-add'
+alias v='nvim'
+alias sv='sudo vim'
+alias nv='nvim'
+alias rl='source ~/.bashrc'
+alias hrm='sudo ~/dotfiles.f/kanata --cfg ~/dotfiles.f/hrmods.kbd'
+alias dotsync='rsync -rvuP /home/natris/dotfiles.f /home/natris/git/natdesk/ --exclude .git'
+# brave not opening
+alias brv='rm ~/.config/BraveSoftware/Brave-Browser/SingletonLock'
+
+# folder alias
+alias cd='\z'
+alias ..='z ..'
+alias back='z -a'
+alias ls='ls --color=auto --sort=extension --group-directories-first'
+alias la='ls  --color=auto --sort=extension --group-directories-first -a'
+alias ll='ls  --color=auto --sort=extension --group-directories-first -l'
+alias lla='ls  --color=auto --group-directories-first -lA'
+alias lt='ls  --color=auto --group-directories-first -ltA'
+alias l='ls  --color=auto --group-directories-first -ltA'
+alias t="tree --dirsfirst -L 1 -a -I '.git'"
+alias tt="tree --dirsfirst -a -I '.git'"
+alias t1='tree -L 1'
+alias t2='tree -L 2'
+alias t3='tree -L 3'
+
+# storage
+alias storage='du -x -h -d1'
+
+# File Handling 
+alias rm='rm -r'
+alias cp='cp -r'
+#alias cp='cp -i'	#confirm
+#alias rm='rm -i'	#confirm
+#alias mv='mv -i'	#confirm
+alias wget='wget --content-disposition'
+
+# git
+alias gs='git status'
+alias ga='git add'
+alias gA='git add -A'
+alias gc='git commit -am'
+alias gpush='git push'
+alias gclone='git clone'
+alias glazy='git add -A && git commit -m "update" && git push'
+alias gitac='git add -A && git commit -am'
+# variables
+
+
+export FZF_DEFAULT_COMMAND='find .'
+
+# Java
+alias jc='javac *.java'
+alias jr='rm *.class'
+
+# C
+alias c17='g++ --std=c++17'
+alias cr='rm *.out'
+
+# Make
+alias mc='make clean'
+
+# FZF tmux
+bind -x '"\C-f": ~/.local/bin/tmux-sessionizer'
+bind -x '"\C-g": ~/.local/bin/nvim-session'
+# Bind Ctrl+F to fzf
+# bind -x '"\C-f": "$(command -v fzf)";'
+source /usr/share/fzf/shell/key-bindings.bash
+
+# Exports
+export EDITOR='nvim'
+eval "$(starship init bash)"
+export XCURSOR_SIZE=16
+
+# [ -n "$SSH_CONNECTION" ] && unset SSH_ASKPASS
+# export GIT_ASKPASS=
+unset SSH_ASKPASS
+
+# zoxide
+eval "$(zoxide init bash)"

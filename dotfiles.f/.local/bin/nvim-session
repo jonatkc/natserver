@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+if [[ $# -eq 1 ]]; then
+    selected=$1
+else
+    # Look for files instead of directories
+    selected=$(find . -mindepth 1 -maxdepth 5 -type f | fzf)
+fi
+
+if [[ -z $selected ]]; then
+    exit 0
+fi
+
+# Open the selected file in nvim
+nvim "$selected"
+
